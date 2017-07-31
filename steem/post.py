@@ -285,7 +285,7 @@ class Post(dict):
             else:
                 new_meta = meta
 
-        return self.post(
+        return self.commit.post(
             original_post["title"],
             newbody,
             reply_identifier=reply_identifier,

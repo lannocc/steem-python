@@ -291,7 +291,7 @@ class Post(dict):
             reply_identifier=reply_identifier,
             author=original_post["author"],
             permlink=original_post["permlink"],
-            meta=new_meta,
+            json_metadata=new_meta,
         )
 
     def reply(self, body, title="", author="", meta=None):
